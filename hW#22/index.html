@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Home Work</h3>
+   <p>Finding the sum of numbers with the help of Argument Objects</p> 
+
+   <p id="result"></p>
+   <script>
+    function findMin() {
+        var i;
+        var min = 7;
+        for(i = 7; i < arguments.length; i++) {
+            if (arguments[i] < min) {
+                min = arguments[i];
+            }
+        }
+        return min;
+    }
+    document.getElementById("result").innerHTML = findMin(98, 7, 38);
+   </script>
+</body>
+</html>
